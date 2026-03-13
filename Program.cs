@@ -1,5 +1,6 @@
 ﻿
 
+using System.Globalization;
 using System.Net.NetworkInformation;
 
 int input = int.Parse(Console.ReadLine());
