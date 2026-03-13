@@ -1,30 +1,32 @@
 ﻿
 
+using System.Data;
 using System.Globalization;
 using System.Net.NetworkInformation;
 
 int input = int.Parse(Console.ReadLine());
 string output = "";
-   
+
 
 
 // X
-for (int i = 0; i < input; i++)
-{   
-    string a = "#";
-    output   = "" ;
-
-    for (int j = 1; j <= i; j++)
+int row = 0;
+while (row < input)
+{
+    output= "";
+    for (int i = 0; i < input; i++)
     {
-        output += " ";
-
+        if (i == row || i == (input - 1 - row))
+        {
+            output += "#";
+        }
+        else
+        {
+            output += " ";
+        }
     }
-   
-    for (int k = 0; k <= i; k++)
-    {
-    }
-        output += "#";
-        Console.WriteLine(output);        
+    Console.WriteLine(output);
+    row++;
 }
 
 
@@ -35,7 +37,7 @@ for (int i = 0; i < input; i++)
 // for (int i = 0; i < input; i++)
 //     {
 //      output = "";  
-        
+
 //     for (int j = 0; j < input - i - 1; j++)
 //     {
 //         output += " ";
@@ -57,7 +59,7 @@ for (int i = 0; i < input; i++)
 // for (int i = 0; i < input; i++)
 // {   
 //     output = "";
-    
+
 //     for (int j = 0; j < input - i- 1; j++)
 //     {
 //         output += " ";
