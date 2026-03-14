@@ -8,26 +8,45 @@ int input = int.Parse(Console.ReadLine());
 string output = "";
 
 
+//Counting triangle
+    int a = 0;
+
+
+for (int i = 0; i < input; i++)
+{
+    output = "";
+    a += 1;
+    
+    for (int j = 0; j <= i; j++)
+    {
+    output += a.ToString();
+    }
+    
+    Console.WriteLine(output);
+}
+
+
+
 
 // X
-int row = 0;
-while (row < input)
-{
-    output= "";
-    for (int i = 0; i < input; i++)
-    {
-        if (i == row || i == (input - 1 - row))
-        {
-            output += "#";
-        }
-        else
-        {
-            output += " ";
-        }
-    }
-    Console.WriteLine(output);
-    row++;
-}
+// int row = 0;
+// while (row < input)
+// {
+//     output= "";
+//     for (int i = 0; i < input; i++)
+//     {
+//         if (i == row || i == (input - 1 - row))
+//         {
+//             output += "#";
+//         }
+//         else
+//         {
+//             output += " ";
+//         }
+//     }
+//     Console.WriteLine(output);
+//     row++;
+// }
 
 
 
