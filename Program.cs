@@ -7,23 +7,46 @@ using System.Net.NetworkInformation;
 int input = int.Parse(Console.ReadLine());
 string output = "";
 
+//Reverse counting triangle
+// int a = 0;
+
+// for (int i = 0; i < input; i++)
+// {
+//     a += 1;
+//     output = "";
+    
+//     for (int k = 0; k < (input - i - 1); k++)
+//     {
+//         output += " ";
+//     }
+
+//     for (int j = 0; j <= i; j++)
+//     {
+//     output += a.ToString();
+//     }
+    
+//     Console.WriteLine(output);
+// }
+
+
+
 
 //Counting triangle
-    int a = 0;
+// int a = 0;
 
 
-for (int i = 0; i < input; i++)
-{
-    output = "";
-    a += 1;
+// for (int i = 0; i < input; i++)
+// {
+//     a += 1;
+//     output = "";
     
-    for (int j = 0; j <= i; j++)
-    {
-    output += a.ToString();
-    }
+//     for (int j = 0; j <= i; j++)
+//     {
+//     output += a.ToString();
+//     }
     
-    Console.WriteLine(output);
-}
+//     Console.WriteLine(output);
+// }
 
 
 
