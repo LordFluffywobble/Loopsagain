@@ -7,6 +7,36 @@ using System.Net.NetworkInformation;
 int input = int.Parse(Console.ReadLine());
 string output = "";
 
+
+//Box
+
+
+
+for (int i = 1; i <= input; i++)
+{
+    output = "";
+    
+    if (i == 1 || i == input)
+    {
+        for (int j = 0; j < input; j++)
+        {
+            output += "#";
+        }
+    }
+    else
+    {
+        output += "#";
+        for (int k = 2; k < input; k++)
+        {
+            output += " ";
+        }
+            output += "#";
+    }
+    Console.WriteLine(output);
+    
+}
+
+
 //Reverse counting triangle
 // int a = 0;
 
